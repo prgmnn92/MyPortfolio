@@ -1,0 +1,47 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+}
+.main .header {
+  height: 1024px;
+  background: url("img/helloquence.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1024px;
+  opacity: 0.7;
+  background-color: rgba(50, 70, 121, 0.73);
+}
+.main .about-me {
+  height: 1024px;
+}
+.main .projects {
+  height: 1024px;
+  background-color: #3d5979;
+}
+.main .contact-me-and-footer {
+  height: 1024px;
+  background-color: #fff;
+}
+.main .contact-me-and-footer .top-img {
+  position: relative;
+  top: -2px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+.main .contact-me-and-footer .footer-img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
