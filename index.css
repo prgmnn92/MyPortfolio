@@ -98,7 +98,7 @@
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
-  padding: 0 25px 50px 25px;
+  padding: 0 25px 80px 25px;
 }
 .main .about-me .about-me-bottom .align-bottom h3 {
   color: #4fa1ff;
@@ -110,7 +110,7 @@
 }
 .main .projects {
   height: 1024px;
-  background-color: #3d5979;
+  background: linear-gradient(328.8deg, #3d5979 61.4%, rgba(61, 89, 121, 0) 153.71%);
   color: whitesmoke;
   padding: 0 150px;
 }
@@ -127,19 +127,68 @@
 .main .contact-me-and-footer {
   height: 1024px;
   background-color: #fff;
+  position: relative;
+}
+.main .contact-me-and-footer .row {
+  margin: 0;
+}
+.main .contact-me-and-footer .contact-me {
+  height: 500px;
+  padding: 200px 150px 0 150px;
+}
+.main .contact-me-and-footer .contact-me .send-button {
+  padding: 0;
+  border: none;
+  width: 90px;
+  height: 26px;
+  background: linear-gradient(136.82deg, #4fa1ff 20.53%, #96c7ff 105.83%);
+  border-radius: 4px;
+}
+.main .contact-me-and-footer .contact-me .form-row {
+  margin-bottom: 15px;
+}
+.main .contact-me-and-footer .contact-me .col {
+  padding: 0;
+}
+.main .contact-me-and-footer .contact-me .contact-me-svg {
+  margin-top: 60px;
 }
 .main .contact-me-and-footer .top-img {
-  position: relative;
+  position: absolute;
   top: -2px;
   width: 100%;
   box-sizing: border-box;
   padding: 0;
 }
 .main .contact-me-and-footer .footer {
+  background: url("img/RectangleFooter.svg");
+  height: 270px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   bottom: 0;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.main .contact-me-and-footer .footer .icons {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+.main .contact-me-and-footer .footer .icons .icon {
+  cursor: pointer;
+}
+.main .contact-me-and-footer .footer .icons .icon:hover {
+  color: black;
+}
+.main .contact-me-and-footer .footer .copyrights {
+  text-align: center;
+  width: 35%;
+  color: whitesmoke;
+  margin-top: 3%;
 }
 .main .contact-me-and-footer .footer-img {
   position: absolute;
