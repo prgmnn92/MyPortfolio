@@ -8,17 +8,24 @@ body {
 
 .main {
   position: relative;
-  min-height: 100vh;
+
   font-family: $SpaceFont;
 }
 
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 30px;
+  right: 40px;
   z-index: 99;
 
-  color: white;
+  color: #3a96ff;
+  font-size: 45px;
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #1a4474;
+    transition: 0.3s;
+  }
 }

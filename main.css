@@ -21,10 +21,6 @@
   font-weight: bold;
   transition: 0.3s;
 }
-.navigation .nav-item a:hover {
-  color: #4fa1ff;
-  transition: 0.3s;
-}
 
 .header {
   height: 1024px;
@@ -130,17 +126,10 @@
 .projects .projects-list .project-description .small-text {
   font-size: 0.8rem;
 }
-.projects .projects-list .project-description .overlay img {
+.projects .projects-list .project-description img {
+  display: block;
   width: 100%;
   height: auto;
-  z-index: 100;
-}
-.projects .projects-list .project-description .overlay .bg {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 200;
 }
 
 .contact-me-and-footer {
@@ -174,14 +163,18 @@
 }
 .contact-me-and-footer .contact-me .contact-me-form .form-row {
   margin-bottom: 15px;
+  max-width: 800px;
 }
 .contact-me-and-footer .contact-me .contact-me-form .send-button {
+  width: 98px;
+  height: 40px;
   padding: 0;
+  box-shadow: -1px 3px 3px 0 rgba(80, 80, 80, 0.2);
   border: none;
-  width: 90px;
-  height: 26px;
-  background: linear-gradient(136.82deg, #4fa1ff 20.53%, #96c7ff 105.83%);
-  border-radius: 4px;
+  border-radius: 7px;
+  margin: 0;
+  font-weight: normal;
+  background: linear-gradient(114.53deg, #4fa1ff 0%, #86beff 88.6%);
 }
 .contact-me-and-footer .top-img {
   position: absolute;
@@ -242,18 +235,23 @@ body {
 
 .main {
   position: relative;
-  min-height: 100vh;
   font-family: "Space Mono", monospace;
 }
 
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 30px;
+  right: 40px;
   z-index: 99;
-  color: white;
+  color: #3a96ff;
+  font-size: 45px;
   cursor: pointer;
+  transition: 0.3s;
+}
+#myBtn:hover {
+  color: #1a4474;
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=main.css.map */
