@@ -1,0 +1,46 @@
+.about-me {
+  height: $SiteHeight;
+  padding: 0 150px;
+
+  .about-me-top {
+    height: 50%;
+
+    .about-me-text {
+      padding: 0;
+      .about-me-header {
+        margin-top: 200px;
+        font-size: 3rem;
+      }
+      .about-me-subtext {
+        font-size: 0.95rem;
+        padding: 10px 0;
+      }
+    }
+
+    .about-me-profile {
+      display: flex;
+      justify-content: center;
+      img {
+        margin-top: 200px;
+      }
+    }
+  }
+
+  .about-me-bottom {
+    height: 50%;
+
+    .align-bottom {
+      @include column-layout;
+      justify-content: flex-end;
+      padding: 0 25px 80px 0;
+      h3 {
+        color: #4fa1ff;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .small-text {
+        margin-top: 10px;
+      }
+    }
+  }
+}

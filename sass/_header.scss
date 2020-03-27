@@ -1,0 +1,44 @@
+.header {
+  height: $SiteHeight;
+  margin: 0;
+  @include standard-padding;
+
+  background: url("img/helloquence.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+  &:after {
+    content: ""; // ::before and ::after both require content
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $SiteHeight;
+    opacity: 0.7;
+    background-color: rgba(50, 70, 121, 0.73);
+  }
+
+  .header-content {
+    @include column-layout;
+    color: #f0f0f0;
+    letter-spacing: 0.01em;
+    justify-content: center;
+    padding: 0;
+
+    .title {
+      width: 100%;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 89px;
+      z-index: 100;
+    }
+    .subtext {
+      margin-top: 15px;
+      width: 100%;
+      font-size: 28px;
+      line-height: 123.43%;
+      /* or 36px */
+      z-index: 100;
+    }
+  }
+}

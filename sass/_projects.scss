@@ -1,0 +1,30 @@
+.projects {
+  height: $SiteHeight;
+  background: linear-gradient(
+    328.8deg,
+    $Accent2 61.4%,
+    rgba(61, 89, 121, 0) 153.71%
+  );
+  color: $White;
+  padding: 0 150px;
+  .projects-header {
+    padding-top: 200px;
+  }
+  .projects-list {
+    padding-top: 100px;
+    .project-description {
+      h2 {
+        font-size: 1.3rem;
+      }
+      .small-text {
+        font-size: 0.8rem;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

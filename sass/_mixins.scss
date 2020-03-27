@@ -1,0 +1,15 @@
+@mixin hover-accent1 {
+  &:hover {
+    color: $Accent1;
+    transition: 0.3s;
+  }
+}
+
+@mixin standard-padding {
+  padding: 0 150px;
+}
+
+@mixin column-layout {
+  display: flex;
+  flex-flow: column;
+}

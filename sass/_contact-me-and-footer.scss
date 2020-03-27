@@ -1,0 +1,103 @@
+.contact-me-and-footer {
+  height: $SiteHeight;
+  position: relative;
+  .row {
+    margin: 0;
+  }
+  .col {
+    padding: 0;
+  }
+
+  .contact-me {
+    height: 500px;
+    padding: 200px 150px 0 150px;
+
+    .contact-me-description {
+      h1 {
+        font-weight: bold;
+      }
+      .contact-me-svg {
+        margin-top: 15%;
+      }
+      .small-text {
+        max-width: 80%;
+      }
+    }
+    .contact-me-form {
+      @include column-layout;
+      justify-content: center;
+      margin-bottom: 90px;
+
+      .form-row {
+        margin-bottom: 15px;
+      }
+
+      .send-button {
+        padding: 0;
+        border: none;
+        width: 90px;
+        height: 26px;
+        background: linear-gradient(136.82deg, #4fa1ff 20.53%, #96c7ff 105.83%);
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .top-img {
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .footer {
+    background: url("img/RectangleFooter.svg");
+    height: 270px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    bottom: 0;
+    @include column-layout;
+    align-items: center;
+
+    .icons {
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-between;
+      width: 35%;
+      .icon {
+        cursor: pointer;
+        transition: 0.3s;
+        path {
+          fill: $White;
+          transition: 0.3s;
+        }
+        &:hover {
+          path {
+            fill: $Accent2;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+    .copyrights {
+      text-align: center;
+      width: 35%;
+      color: whitesmoke;
+      margin-top: 3%;
+    }
+  }
+
+  .footer-img {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.navigation {
+  position: absolute;
+  top: 30px;
+  z-index: 100;
+  width: 100%;
+  padding: 0 150px;
+
+  .navbar-brand {
+    font-family: $SpartanFont;
+    color: $White;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .nav-item {
+    margin-left: 80px;
+    a {
+      text-decoration: none;
+      color: $White;
+      font-weight: bold;
+      transition: 0.3s;
+      @include hover-accent1;
+    }
+  }
+}

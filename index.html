@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Spartan:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 
     <link
       rel="stylesheet"
@@ -25,10 +26,22 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body class="main">
+    <span
+      onclick="topFunction()"
+      id="myBtn"
+      class="iconify"
+      data-inline="false"
+      data-icon="fa-solid:arrow-circle-up"
+      style="color: #3a96ff; font-size: 50px;"
+    ></span>
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -37,7 +50,7 @@
     <![endif]-->
     <div class="navigation">
       <nav class="navbar navbar-default navbar-expand-lg">
-        <a class="navbar-brand" href="#">Phillip</a>
+        <a class="navbar-brand" href="#header">Phillip</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,31 +65,33 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#about-me"
                 >about <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">projects</a>
+              <a class="nav-link" href="#projects">projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
+              <a class="nav-link" href="#contact-me">contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-    <div class="container-fluid header row ">
+    <div id="header" class="container-fluid header row ">
       <div class="header-content col-sm-4">
-        <div class="title">Frontend web developer</div>
-        <div class="subtext">
+        <div class="title animated fadeInLeft delay-1s">
+          Frontend web developer
+        </div>
+        <div class="subtext animated fadeInLeft delay-2s">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </div>
       </div>
       <div class="col-sm-4"></div>
       <div class="col-sm-4"></div>
     </div>
-    <div class="container-fluid about-me">
+    <div id="about-me" class="container-fluid about-me">
       <div class="row about-me-top">
         <div class="col-sm-6 about-me-text">
           <h1 class="about-me-header">about me</h1>
@@ -129,7 +144,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid projects">
+    <div id="projects" class="container-fluid projects">
       <div class="projects-header">
         <h1 class="title">projects</h1>
         <div class="small-text">
@@ -141,6 +156,7 @@
         <div class="col-sm-2 project-description"></div>
         <div class="col-sm-2 project-description">
           <img src="img/projectone.svg" />
+
           <h2>project one</h2>
           <div class="small-text">
             Short description of the project should be inside this text box.
@@ -170,7 +186,7 @@
         <div class="col-sm-2 project-description"></div>
       </div>
     </div>
-    <div class="contact-me-and-footer">
+    <div id="contact-me" class="contact-me-and-footer">
       <img class="top-img" src="img/PolygonFooter.svg" />
       <div class="row contact-me">
         <div class="col-sm-6 contact-me-description">
@@ -182,7 +198,7 @@
           </div>
           <img class="contact-me-svg" src="img/contact-svg.svg" />
         </div>
-        <div class="col-sm-6 contact-form">
+        <div class="col-sm-6 contact-me-form">
           <form>
             <div class="form-row">
               <div
@@ -219,10 +235,58 @@
       </div>
       <div class="row footer">
         <div class="icons">
-          <img class="icon" src="img/github.svg" />
-          <img class="icon" src="img/facebook.svg" />
-          <img class="icon" src="img/twitter.svg" />
-          <img class="icon" src="img/instagram.svg" />
+          <svg
+            class="icon"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.4844 1.46274e-06C7.82422 -0.00390479 0 7.81641 0 17.4688C0 25.1016 4.89453 31.5898 11.7109 33.9727C12.6289 34.2031 12.4883 33.5508 12.4883 33.1055V30.0781C7.1875 30.6992 6.97266 27.1914 6.61719 26.6055C5.89844 25.3789 4.19922 25.0664 4.70703 24.4805C5.91406 23.8594 7.14453 24.6367 8.57031 26.7422C9.60156 28.2695 11.6133 28.0117 12.6328 27.7578C12.8555 26.8398 13.332 26.0195 13.9883 25.3828C8.49609 24.3984 6.20703 21.0469 6.20703 17.0625C6.20703 15.1289 6.84375 13.3516 8.09375 11.918C7.29688 9.55469 8.16797 7.53125 8.28516 7.23047C10.5547 7.02734 12.9141 8.85547 13.0977 9C14.3867 8.65235 15.8594 8.46875 17.5078 8.46875C19.1641 8.46875 20.6406 8.66016 21.9414 9.01172C22.3828 8.67578 24.5703 7.10547 26.6797 7.29688C26.793 7.59766 27.6445 9.57422 26.8945 11.9063C28.1602 13.3438 28.8047 15.1367 28.8047 17.0742C28.8047 21.0664 26.5 24.4219 20.9922 25.3906C21.4639 25.8546 21.8385 26.4079 22.0941 27.0182C22.3496 27.6285 22.481 28.2836 22.4805 28.9453V33.3398C22.5117 33.6914 22.4805 34.0391 23.0664 34.0391C29.9844 31.707 34.9648 25.1719 34.9648 17.4727C34.9648 7.81641 27.1367 1.46274e-06 17.4844 1.46274e-06Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            class="icon"
+            width="41"
+            height="40"
+            viewBox="0 0 41 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.1207 0C9.00896 0 0 9.00896 0 20.1207C0 30.162 7.35688 38.4848 16.9776 40V25.9382H11.8664V20.1207H16.9776V15.6877C16.9776 10.6409 19.9819 7.85793 24.5759 7.85793C26.7773 7.85793 29.0834 8.25033 29.0834 8.25033V13.1985H26.5399C24.0447 13.1985 23.2639 14.752 23.2639 16.3437V20.1167H28.8399L27.9485 25.9342H23.2639V39.996C32.8846 38.4888 40.2415 30.164 40.2415 20.1207C40.2415 9.00896 31.2325 0 20.1207 0Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            class="icon"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 0C7.83594 0 0 7.83594 0 17.5C0 27.1641 7.83594 35 17.5 35C27.1641 35 35 27.1641 35 17.5C35 7.83594 27.1641 0 17.5 0ZM25.9102 13.1914C25.9219 13.375 25.9219 13.5664 25.9219 13.7539C25.9219 19.4883 21.5547 26.0938 13.5742 26.0938C11.1133 26.0938 8.83203 25.3789 6.91016 24.1484C7.26172 24.1875 7.59766 24.2031 7.95703 24.2031C9.98828 24.2031 11.8555 23.5156 13.3438 22.3516C11.4375 22.3125 9.83594 21.0625 9.28906 19.3438C9.95703 19.4414 10.5586 19.4414 11.2461 19.2656C10.2646 19.0662 9.38232 18.5331 8.74928 17.757C8.11624 16.9808 7.77143 16.0094 7.77344 15.0078V14.9531C8.34766 15.2773 9.02344 15.4766 9.73047 15.5039C9.1361 15.1078 8.64866 14.5711 8.31137 13.9415C7.97408 13.3119 7.79736 12.6088 7.79688 11.8945C7.79688 11.0859 8.00781 10.3477 8.38672 9.70703C9.47618 11.0482 10.8357 12.1451 12.3768 12.9264C13.918 13.7078 15.6063 14.1561 17.332 14.2422C16.7188 11.293 18.9219 8.90625 21.5703 8.90625C22.8203 8.90625 23.9453 9.42969 24.7383 10.2734C25.7188 10.0898 26.6562 9.72266 27.4922 9.23047C27.168 10.2344 26.4883 11.082 25.5859 11.6172C26.4609 11.5234 27.3047 11.2812 28.0859 10.9414C27.4961 11.8086 26.7578 12.5781 25.9102 13.1914Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            class="icon"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M26.25 20C26.25 21.6576 25.5915 23.2473 24.4194 24.4194C23.2473 25.5915 21.6576 26.25 20 26.25C18.3424 26.25 16.7527 25.5915 15.5806 24.4194C14.4085 23.2473 13.75 21.6576 13.75 20C13.75 19.6437 13.7875 19.2958 13.8521 18.9583H11.6667V27.2854C11.6667 27.8646 12.1354 28.3333 12.7146 28.3333H27.2875C27.5651 28.3328 27.8311 28.2221 28.0271 28.0257C28.2232 27.8292 28.3333 27.563 28.3333 27.2854V18.9583H26.1479C26.2125 19.2958 26.25 19.6437 26.25 20ZM20 24.1667C20.5473 24.1665 21.0892 24.0586 21.5948 23.849C22.1004 23.6394 22.5598 23.3323 22.9467 22.9452C23.3336 22.5581 23.6405 22.0986 23.8498 21.5929C24.0591 21.0872 24.1668 20.5452 24.1667 19.9979C24.1665 19.4506 24.0586 18.9087 23.849 18.4031C23.6394 17.8975 23.3323 17.4381 22.9452 17.0512C22.5581 16.6643 22.0986 16.3574 21.5929 16.1481C21.0872 15.9388 20.5452 15.8311 19.9979 15.8312C18.8926 15.8315 17.8326 16.2709 17.0512 17.0527C16.2698 17.8345 15.831 18.8947 15.8312 20C15.8315 21.1053 16.2709 22.1653 17.0527 22.9467C17.8345 23.7281 18.8947 24.1669 20 24.1667ZM25 15.625H27.4979C27.6639 15.625 27.8231 15.5592 27.9406 15.4421C28.0581 15.3249 28.1244 15.166 28.125 15V12.5021C28.125 12.3358 28.0589 12.1763 27.9413 12.0587C27.8237 11.9411 27.6642 11.875 27.4979 11.875H25C24.8337 11.875 24.6742 11.9411 24.5566 12.0587C24.439 12.1763 24.3729 12.3358 24.3729 12.5021V15C24.375 15.3437 24.6562 15.625 25 15.625ZM20 0C14.6957 0 9.60859 2.10714 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C9.60859 37.8929 14.6957 40 20 40C22.6264 40 25.2272 39.4827 27.6537 38.4776C30.0802 37.4725 32.285 35.9993 34.1421 34.1421C35.9993 32.285 37.4725 30.0802 38.4776 27.6537C39.4827 25.2272 40 22.6264 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0ZM30.4167 28.1021C30.4167 29.375 29.375 30.4167 28.1021 30.4167H11.8979C10.625 30.4167 9.58333 29.375 9.58333 28.1021V11.8979C9.58333 10.625 10.625 9.58333 11.8979 9.58333H28.1021C29.375 9.58333 30.4167 10.625 30.4167 11.8979V28.1021Z"
+              fill="white"
+            />
+          </svg>
         </div>
         <div class="copyrights">
           Copyright © 2020<br />
